@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Unworldly Project</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <style>
+    body {
+      background-color: #151515;
+    }
+  </style>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      const iframes = document.querySelectorAll("iframe");
+      iframes.forEach((iframe) => {
+        iframe.addEventListener("mouseenter", () => {
+          iframes.forEach((otherIframe) => {
+            if (otherIframe !== iframe) {
+              otherIframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+            }
+          });
+        });
+      });
+    });
+  </script>
+      <style>
+    body {
+      background-color: #000;
+    }
 
+    header {
+      font-family: 'Georgia', serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+      padding: 40px 10px 40px 10px;
+    }
+
+    header h2 {
+      font-family: 'Georgia', serif;
+      font-size: 3em;
+      letter-spacing: 1px;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+      font-size: 1.15em;
+    }
+
+    .tax-table {
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f9;
+      border-left: 5px solid gold;
+      padding: 15px 20px;
+      margin: 2em 0;
+    }
+
+    footer {
+      font-family: 'Georgia', serif;
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
+      margin-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    header {
+      font-family: 'Georgia', serif;
+      background-color: #000;
+      color: gold;
+      text-align: center;
+      padding: 40px 10px 40px 10px;
+    }
+
+    header h2 {
+      font-family: 'Georgia', serif;
+      font-size: 3em;
+      letter-spacing: 1px;
+    }
+
+    .tax-table {
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f9;
+      border-left: 5px solid gold;
+      padding: 15px 20px;
+      margin: 2em 0;
+    }
+
+    footer {
+      font-family: 'Georgia', serif;
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+      margin-top: 60px;
+      padding-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="https://thepianoodyssey.com">Novel</a></li>
+        <li><a href="space-drama">Space Drama</a></li>
+        <li><a href="the-declaration-for-shared-humanity">The Declaration<br>for Shared Humanity</a></li>
+        <li><a href="the-stopwatch-theory">The Stopwatch Theory</a></li>
+        <li><a href="the-insight-engine">The Insight Engine</a></li>
+        <li class="active">The Unworldly Project</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title" style="color: rgb(255, 100, 100);">The Unworldly Project - Planning</h1>
+
+    <img src="unworldly.jpg" class="main-image" />
+
+    <section class="intro-text">
+      <p>A policy paper. A civilizational milestone. A plan of even greater practical significance than the protection of wildlife.<br>
+        It contains three core demands:</p>
+      <ol>
+        <li style="font-size:x-large; color: rgb(255, 100, 100);"><b>Implement a Carbon-Based Meat Tax</b><br>
+        Impose a tax on traditional animal farming based on carbon emissions, making slaughter reflect its true environmental cost.</li><br>
+
+        <li style="font-size:x-large; color: rgb(255, 100, 100);"><b>Establish Minimum Animal Welfare Standards</b><br>
+        Make all meat production fully transparent, and ban factory farming and inhumane slaughter practices by law.</li><br>
+
+        <li style="font-size:x-large; color: rgb(255, 100, 100);"><b>Fund Innovation in Plant Protein</b><br>
+        Offer grants and incentives for local breakthroughs in plant-based meat, fermentation protein, and cellular agriculture.</li><br>
+      </ol>
+      <p style="font-size:x-large; color: rgb(255, 100, 100);">All key ideas are included — we offer this as a starting point for serious discussion and <b>ACTION!</b></p>
+    </section>
+    
+    <section class="intro-text">
+      <p>Let’s start with what’s on our plate — it’s the least our conscience can do.<br>
+        Plant-based meat gives you the nutrition you need — without the killing.<br>
+        It’s not everywhere yet simply because it hasn’t gone mainstream — yet.<br>
+        </p>
+
+      <p>As long as you stop buying it, the market will collapse, and those monsters will be forced to end the slaughter.<br>
+        We have the power to stop this. Please reduce your meat consumption.</p>
+
+      <p>If you enjoy watching short videos, please share the following with your family and friends.<br>
+        But honestly, I can’t believe anyone could watch something like this and not feel compelled to act.<br>
+        We hate those who watch a video like this, say “Humans are so cruel,”<br>
+        and then turn around and say “This tastes so good.” — <b>FUCK YOU.</b></p>
+
+      <p>
+        What the hell are the core lessons of education even teaching?<br>
+        What’s the point of higher education and earning a degree if it only leads to apathy?<br>
+        If you’re still human, for fuck’s sake, don’t just sit there doing nothing.</p>
+
+      <p>The pigs are just very smart overweight people with snouts.<br>
+        As a human, your apathy and ignorance put even pigs to <b>SHAME.</b><br>
+        Because in your next life, you might be the one slaughtered by humans —<br>
+        you can't control who you'll be in your next life, nor can you rule out becoming them.</p>
+    </section>
+
+    <section class="videos-grid">
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/hH5lixT6t3I" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/KCnAkdP6UzM" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/tyKyYUQ1OA4" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/kOLUky8s0Ik" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/jHD-Ro8wdnU" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/Io0pFwGEpGI" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/odSUhqH_XCw" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/f8yUmA6Ynnw" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/iO9CVUW4yGM" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/iKrq5dB0qVI" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/lRItRvTr4hw" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/yrCahbbjEM4" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Byq6tUqEfiU" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/s8owa-tW_BU" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/BIFbMA5LwWQ" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/KIcdqKS9AOA" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/BMxHCU8JdH0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/BxwdtM1UG-s" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/bsIvE76JCOU" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/x3UvZ_B7dP4" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/XjW_LyVzZSg" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/d1HEZBfUlRA" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/60SQgUM5i90" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/u3vldrJb2lM" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/42jyKh2NtX4" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/N9NxtyV2gLo" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/s-wD46hRaYM" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/5CpGHj99gLU" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/MHl8CFsu078" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/ywaP_2b-Xqg" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/HcAsGX99ES4" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/zlwUkn05jCE" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/LAWiP1snqCM" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-row">
+      </div>
+      <div class="video-row">
+        <iframe src="https://www.youtube.com/embed/wQ8xo5RCsE0" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/fryH5z3TVL4" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/A5PzwJvgla0" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/BeEadQRv_AU" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+
+  <section class="intro-text">
+  <p style="font-size:x-large; color: rgb(255, 78, 78);">Why are those with evident perceptual deficits never held accountable by law? Is human law written solely for itself?<br>
+  Elections, power struggles, profit-sharing—it all looks like garbage to us. Just a bunch of fools running the show.</p>
+  </section>
+
+  </main>
+  <footer class="footer">
+    © 2025 The Piano Odyssey. All rights reserved.
+  </footer>
+</body>
+</html>
