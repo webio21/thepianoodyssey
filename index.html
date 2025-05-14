@@ -1,86 +1,213 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Piano Odyssey</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>THE PIANO ODYSSEY</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <style>
+    body {
+      background-color: #151515;
+    }
+  </style>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      const iframes = document.querySelectorAll("iframe");
+      iframes.forEach((iframe) => {
+        iframe.addEventListener("mouseenter", () => {
+          iframes.forEach((otherIframe) => {
+            if (otherIframe !== iframe) {
+              otherIframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+            }
+          });
+        });
+      });
+    });
+  </script>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            text-align: center;
-            max-width: 600px;
-            width: 100%;
-        }
-        h1 {
-            font-size: 36px;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        b {
-            font-size: 24px;
-            color: #34495e;
-        }
-        .content {
-            font-size: 18px;
-            line-height: 1.6;
-            margin: 20px 0;
-            color: #555;
-        }
-        .release-info {
-            font-size: 16px;
-            color: #7f8c8d;
-            margin: 10px 0;
-        }
-        .footer {
-            font-size: 14px;
-            color: #bdc3c7;
-            margin-top: 30px;
-        }
-        .footer a {
-            color: #3498db;
-            text-decoration: none;
-        }
-    </style>
+    body {
+      background-color: #fdfdfd;
+      color: #222;
+    }
+
+    header {
+      font-family: 'Georgia', serif;
+      background-color: #000;
+      color: #00d2ff;
+      text-align: center;
+      padding: 40px 10px 40px 10px;
+    }
+
+    header h2 {
+      font-family: 'Georgia', serif;
+      font-size: 3em;
+      letter-spacing: 1px;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+      font-size: 1.15em;
+    }
+
+    .tax-table {
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f9;
+      border-left: 5px solid gold;
+      padding: 15px 20px;
+      margin: 2em 0;
+    }
+
+    footer {
+      font-family: 'Georgia', serif;
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
+      margin-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    b {
+      font-size: 20pt;
+      color: #000;
+    }
+
+    header {
+      font-family: 'Georgia', serif;
+      color: #00d2ff;
+      text-align: center;
+      padding: 40px 0px;
+      background-image: url('bg.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: center top;
+      background-color: #000;
+    }
+
+    header h2 {
+      font-family: 'Georgia', serif;
+      font-size: 3em;
+    }
+
+    .tax-table {
+      font-family: 'Georgia', serif;
+      background-color: #f9f9f9;
+      border-left: 5px solid gold;
+      padding: 15px 20px;
+      margin: 2em 0;
+    }
+
+    footer {
+      font-family: 'Georgia', serif;
+      text-align: center;
+      color: #777;
+      font-size: 0.9em;
+      margin-top: 60px;
+      padding-bottom: 40px;
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Welcome to The Piano Odyssey</h1>
-        <b>Get ready for the highly anticipated deluxe edition of the exciting sci-fi series novel<br>The Piano Odyssey.</b><br>
-        <div class="content">
-            Set to be released soon, it will be available for $13.77. Stay tuned for more updates!
-        </div>
-        
-        <div class="release-info">
-            <strong>THE PIANO ODYSSEY - PART 1 - STARMAN</strong><br>
-            Release Date: May 2025<br>
-            <a href="preview_part1.html">- Preview available –<br>Read the first chapter for free.</a>
-            <br><br>
-            <a href="the-declaration-for-shared-humanity">Learn more about The Declaration for Shared Humanity.</a><br>
-            This declaration is the pivotal one referenced in Part II of The Piano Odyssey series.
-        </div>
-        
-        <div class="release-info">
-            <strong>THE PIANO ODYSSEY - PART 2 - CONTACT</strong><br>
-            Release Date: 2026
-        </div>
-        
-        <div class="footer">
-            Copyright © THE PIANO ODYSSEY. All Rights Reserved.
-        </div>
-    </div>
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li class="active">Novel</li>
+        <li><a href="space-drama">Space Drama</a></li>
+        <li><a href="the-declaration-for-shared-humanity">The Declaration<br>for Shared Humanity</a></li>
+        <li><a href="the-stopwatch-theory">The Stopwatch Theory</a></li>
+        <li><a href="the-insight-engine">The Insight Engine</a></li>
+        <li><a href="the-unworldly-project">The Unworldly Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header>
+    <h2>THE PIANO ODYSSEY<br>2005-2025</h2>
+  </header>
+
+  <p style="text-align: center;">
+    <img src="trilogy.jpg" width="100%" height="auto" style="max-width: 100%; height: auto;">
+  </p>
+  <main>
+
+<p><b>Description</b></p>
+
+<p>This is not a science fiction novel—it's a blueprint for civilization’s second chance. A revolt beyond utility.</p>
+
+<p>In a universe bound by unbreakable laws, one man has found the key to rewriting reality itself.</p>
+
+<p>Neosun was never meant to exist—at least, not in this timeline. A brilliant but discarded mind, he spent his life chasing forbidden truths, reaching beyond the limits of human understanding. But the world had no patience for dreamers, and the universe had no mercy for those who dared to defy its design.</p>
+
+<p>Broke. Isolated. Forgotten. His stomach was empty, his future a dead end. Lonely, powerless, and desperate, he made a final, reckless gamble—plunging into Framequark, the enigmatic realm where he picked up the torch of childhood innocence that humanity had carelessly discarded. That fragile flame, now on the brink of extinction, flickered against the winds of indifference.</p>
+
+<p>Framequark.<br>
+An anomaly in the fabric of existence. A force capable of reshaping time itself. And within it, he discovered the final equation—a truth so profound it could fracture the present, resurrect the past, and create infinite futures.</p>
+
+<p>But some things were never meant to be known. Forces that feed on entropy have begun to hunt him. The world fears what it cannot control. And at the heart of it all, one question lingers:</p>
+
+<p>If you could defy time, would you fix what was lost… or forge something greater?</p>
+
+<p>A mind-bending fusion of hard science fiction, philosophical depth, and high-stakes suspense, <i>The Piano Odyssey</i> is an electrifying exploration of free will, grief, and the cost of ultimate knowledge.</p>
+
+<p>For readers who loved the metaphysical ambition of <i>2001: A Space Odyssey</i> and the emotional depth of <i>Solaris</i>, <i>The Piano Odyssey</i> offers a lyrical yet rigorous journey into time, memory, and synthetic consciousness.</p><br>
+
+<p><b>Part I: Starman<span style="font-weight: normal;"><i> — What The Hell Is God Doing?</i></span></b></p>
+
+<p style="color:#00b1f7;">📖 > <a href="part-1-preview.html">Preview</a></p>
+
+<p>If you could defy time, would you fix what was lost… or forge something greater?</p><br>
+
+<p><b>Part II: Contact<span style="font-weight: normal;"><i>  — This Signal Is Not of This World!</i></span></b></p>
+
+<p style="color:#ff4629;">📖 > <a href="part-2-preview.html">Preview</a></p>
+
+<p>The earth had become a paradise not for people,<br>
+but for the oligarchs and tyrants who had perfected the art of human exploitation.</p>
+
+<p>After a series of civilizational reforms on Earth ended in utter collapse, Neosun turned away in silence—<br>
+choosing a path no one else could see.</p>
+
+<p>In the aftermath of ruin, he secretly nurtured a new experimental base—<br>
+one built for the next kind of humanity.</p>
+
+<p>On an artificial planet orbiting in silence,<br>
+he established first contact with… another kind of mind.</p><br>
+
+<p><b>Part III: Umbra<span style="font-weight: normal;"><i> - Awakening From The Cosmic Mind!</i></span></b></p>
+
+<p style="color:#a929ff;">📖 > <a href="part-3-preview.html">Preview</a></p>
+
+<p>On an artificial planet orbiting in silence,<br>
+he established first contact with… another kind of mind.</p><br>
+
+<p><b>The Melody Hidden in the Novel</b></p>
+
+  <div >
+    <h2>🎵 Part I Melody</h2>
+    <audio controls>
+      <source src="part-1-melody.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+<p></p>
+  <div >
+    <h2>🎵 Part II Melody</h2>
+    <audio controls>
+      <source src="part-2-melody.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+<p></p>
+  <div >
+    <h2>🎵 Part III Melody</h2>
+    <audio controls>
+      <source src="part-3-melody.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+<p></p>
+<br>
+  <p style="text-align: center;">- <a href="mailto:movement@thepianoodyssey.com">Join Us</a> -</p>
+  <footer>
+    &copy; 2025 The Piano Odyssey. All rights reserved.
+  </footer>
 </body>
 </html>
