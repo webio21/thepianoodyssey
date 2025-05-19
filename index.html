@@ -31,40 +31,9 @@
       color: #222;
     }
 
-    header {
-      font-family: 'Georgia', serif;
-      background-color: #000;
-      color: #00d2ff;
-      text-align: center;
-      padding: 40px 10px 40px 10px;
-    }
-
-    header h2 {
-      font-family: 'Georgia', serif;
-      font-size: 3em;
-      letter-spacing: 1px;
-    }
-
     p {
       margin-bottom: 1.5em;
       font-size: 1.15em;
-    }
-
-    .tax-table {
-      font-family: 'Georgia', serif;
-      background-color: #f9f9f9;
-      border-left: 5px solid gold;
-      padding: 15px 20px;
-      margin: 2em 0;
-    }
-
-    footer {
-      font-family: 'Georgia', serif;
-      text-align: center;
-      color: #666;
-      font-size: 0.9em;
-      margin-top: 60px;
-      padding-bottom: 40px;
     }
 
     b {
@@ -105,6 +74,21 @@
       margin-top: 60px;
       padding-bottom: 40px;
     }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
   </style>
 </head>
 
@@ -125,14 +109,35 @@
   <header>
     <h2>THE PIANO ODYSSEY<br>2005-2025</h2>
   </header>
+<div id="video-container" style="position: relative; width: 100%; padding-bottom: 56.25%; background-color: #000; cursor: pointer;">
+  <img src="promo.png" alt="Play Video"
+       style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+              width: 64px; height: 64px; background: rgba(0,0,0,0.6); border-radius: 50%;
+              display: flex; align-items: center; justify-content: center; z-index: 2;">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+      <path d="M8 5v14l11-7z"/>
+    </svg>
+  </div>
+</div>
 
+<script>
+  document.getElementById('video-container').addEventListener('click', function () {
+    this.innerHTML = '<iframe src="https://www.youtube.com/embed/c3WvYIMWGBo?autoplay=1&rel=0" ' +
+                     'frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ' +
+                     'style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"></iframe>';
+  });
+</script>
+  <script>
+    document.querySelector('video').addEventListener('contextmenu', e => e.preventDefault());
+  </script>
   <p style="text-align: center;">
     <img src="trilogy.jpg" width="100%" height="auto" style="max-width: 100%; height: auto;">
   </p>
   <main>
 
-<p><b>Description</b></p>
-
+<h2 style="font-size: 2.5em; border-bottom: 1px solid #ccc; padding-bottom: 10px;">Description</h2>
+<p></p>
 <p>This is not a science fiction novel—it's a blueprint for civilization’s second chance. A revolt beyond utility.</p>
 
 <p>In a universe bound by unbreakable laws, one man has found the key to rewriting reality itself.</p>
@@ -180,9 +185,9 @@ he established first contact with… another kind of mind.</p><br>
 
 <p></p><br>
 
-<p><b>The Melody Hidden in the Novel</b></p>
-
-  <div >
+<h2 style="font-size: 2.5em; border-bottom: 1px solid #ccc; padding-bottom: 10px;">The Melody Hidden in the Novel</h2>
+<p></p>
+  <div>
     <h2>🎵 Part I Melody</h2>
     <audio controls>
       <source src="melody-part1.mp3" type="audio/mpeg">
@@ -202,9 +207,35 @@ he established first contact with… another kind of mind.</p><br>
       <source src="melody-part3.mp3" type="audio/mpeg">
     </audio>
   </div>
+<p></p><br>
+<section>
+  <div style="max-width: 100%; margin: auto;">
+    <h2 style="font-size: 2.5em; border-bottom: 1px solid #ccc; padding-bottom: 10px;">The Piano Odyssey, A Journey of Creation</h2>
+    <p style="font-size: 1.2em; margin-top: 30px;">
+      This novel is not merely a story — it's the result of a two-decade creative odyssey, reshaped across languages, media formats, and eras. Here's how this ambitious sci-fi project evolved:
+    </p>
+    <ul style="list-style: none; padding: 0; margin-top: 30px; line-height: 1.8;">
+<li><b>2005</b> Wrote an original 3,700-word sci-fi short story in Japanese.</li>
+<li><b>2005–2007</b> Expanded the short story into a sci-fi novella (Japanese).</li>
+<li><b>2009–2012</b> Adapted the novella into a space drama script (Japanese).</li>
+<li><b>2015–2019</b> Translated the script into a Chinese-language space drama.</li>
+<li><b>2019–2020</b> Produced as a bilingual (Japanese/Chinese) audio drama.</li>
+<li><b>2020–2021</b> Translated the space drama script into English.</li>
+<li><b>2022–2025</b> Rewritten as Part I of a sci-fi novel trilogy in English.</li>
+    </ul>
+    <br>
+    <p>
+      From ink to audio, and across three languages, this saga is a testament to enduring vision and creative evolution.
+    </p>
+  </div>
+</section>
 <p></p>
 <br>
+<h2 style="font-size: 2.5em; border-bottom: 1px solid #ccc; padding-bottom: 10px;">About the Author</h2>
+<p></p>
+<p>Steven Shimizu is an author from Japan, born in Hong Kong, designer, musician, and dreamer exploring the future through speculative fiction. As an activist writer committed to bringing science fiction into reality, <i>The Piano Odyssey</i> is his only science fiction novel series. He is the originator of <i>The Stopwatch Theory</i> and the initiator of <i>The Declaration for Shared Humanity</i>.</p>
 
+<p>As with many who walk the solitary path by choice, he has lived in radical simplicity, yet it is this very distance from the world that allows for a deeper dialogue with it. Steven invites a global audience to break free from the tyranny of utility and embrace a more compassionate and empathy-driven way of life.</p>
 
   </main>
   <p style="text-align: center;">- <a href="mailto:movement@thepianoodyssey.com">Join Us</a> -</p>
