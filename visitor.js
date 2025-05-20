@@ -1,3 +1,4 @@
+
 window.clicky_site_ids = window.clicky_site_ids || [];
 window.clicky_site_ids.push(101485118);
 
@@ -6,5 +7,15 @@ window.clicky_site_ids.push(101485118);
   s.type = 'text/javascript';
   s.async = true;
   s.src = '//static.getclicky.com/js';
-  document.getElementsByTagName('head')[0].appendChild(s);
+  document.head.appendChild(s);
+})();
+
+(function() {
+  var img = document.createElement('img');
+  img.src = '//in.getclicky.com/101485118ns.gif';
+  img.alt = 'Clicky';
+  img.width = 1;
+  img.height = 1;
+  img.style.display = 'none';
+  document.body.appendChild(img);
 })();
