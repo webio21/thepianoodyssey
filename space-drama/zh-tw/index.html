@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Audio Drama</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #151515;
+      padding: 20px;
+      margin: 0;
+      max-width: 1200px;
+      margin: auto;
+    }
 
+    h2 {
+      text-align: center;
+      color: #ccc;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .audio-item {
+      text-align: center;
+      background: #000000;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .audio-thumbnail {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+
+    .audio-thumbnail:hover {
+      transform: scale(1.03);
+    }
+
+    .progress-bar {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+    <script async data-id="101485118" src="//static.getclicky.com/js"></script>
+    <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101485118ns.gif" /></p></noscript>
+</head>
+<body>
+  <h2><p style="font-size: 12pt;">The script preview is currently unavailable.</p>Audio Drama 2020 Chinese zh-tw Preview</h2>
+  <div class="container">
+    <div class="audio-item"><img src="promo.jpg" class="audio-thumbnail" data-audio="promo.mp3"><audio id="audio-promo" src="promo.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-promo" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="01.jpg" class="audio-thumbnail" data-audio="01.mp3"><audio id="audio-01" src="01.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-01" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="02.jpg" class="audio-thumbnail" data-audio="02.mp3"><audio id="audio-02" src="02.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-02" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="07.jpg" class="audio-thumbnail" data-audio="07.mp3"><audio id="audio-07" src="07.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-07" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="09.jpg" class="audio-thumbnail" data-audio="09.mp3"><audio id="audio-09" src="09.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-09" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="10.jpg" class="audio-thumbnail" data-audio="10.mp3"><audio id="audio-10" src="10.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-10" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="12.jpg" class="audio-thumbnail" data-audio="12.mp3"><audio id="audio-12" src="12.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-12" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="13.jpg" class="audio-thumbnail" data-audio="13.mp3"><audio id="audio-13" src="13.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-13" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="34.jpg" class="audio-thumbnail" data-audio="34.mp3"><audio id="audio-34" src="34.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-34" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="35.jpg" class="audio-thumbnail" data-audio="35.mp3"><audio id="audio-35" src="35.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-35" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="40.jpg" class="audio-thumbnail" data-audio="40.mp3"><audio id="audio-40" src="40.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-40" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="42.jpg" class="audio-thumbnail" data-audio="42.mp3"><audio id="audio-42" src="42.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-42" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="51.jpg" class="audio-thumbnail" data-audio="51.mp3"><audio id="audio-51" src="51.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-51" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="63.jpg" class="audio-thumbnail" data-audio="63.mp3"><audio id="audio-63" src="63.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-63" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="67.jpg" class="audio-thumbnail" data-audio="67.mp3"><audio id="audio-67" src="67.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-67" value="0" step="0.1"></div>
+    <div class="audio-item"><img src="73.jpg" class="audio-thumbnail" data-audio="73.mp3"><audio id="audio-73" src="73.mp3" preload="auto"></audio><input type="range" class="progress-bar" id="progress-73" value="0" step="0.1"></div>
+  </div>
+
+  <script>
+    const thumbnails = document.querySelectorAll('.audio-thumbnail');
+    const allAudios = document.querySelectorAll('audio');
+    const allProgressBars = document.querySelectorAll('.progress-bar');
+
+    let currentAudio = null;
+    let updateInterval = null;
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', function () {
+        const audioName = this.dataset.audio.split('.')[0];
+        const audio = document.getElementById('audio-' + audioName);
+        const progressBar = document.getElementById('progress-' + audioName);
+
+        if (currentAudio && currentAudio !== audio) {
+          currentAudio.pause();
+          currentAudio.currentTime = 0;
+          clearInterval(updateInterval);
+          allProgressBars.forEach(pb => pb.value = 0);
+        }
+
+        if (audio.paused) {
+          audio.play();
+          currentAudio = audio;
+
+          updateInterval = setInterval(() => {
+            if (audio.duration) {
+              progressBar.value = (audio.currentTime / audio.duration) * 100;
+            }
+            if (audio.ended) {
+              clearInterval(updateInterval);
+              progressBar.value = 0;
+              currentAudio = null;
+            }
+          }, 200);
+        } else {
+          audio.pause();
+          clearInterval(updateInterval);
+        }
+      });
+    });
+
+    allProgressBars.forEach(bar => {
+      bar.addEventListener('input', function () {
+        const id = this.id.replace('progress-', 'audio-');
+        const audio = document.getElementById(id);
+        if (audio.duration) {
+          audio.currentTime = (this.value / 100) * audio.duration;
+        }
+      });
+    });
+
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+  </script>
+</body>
+</html>
